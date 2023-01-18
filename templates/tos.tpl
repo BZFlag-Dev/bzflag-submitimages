@@ -19,6 +19,6 @@
 <h2>In any case:</h2>
 <p>The file must be released or licensed under an OSI-approved license. We will <strong>NOT</strong> host files that are released under a proprietary license.</p>
 
-<h1>Removal of Copyrighted Material</h1>
+<h1>DMCA Takedown Policy</h1>
 
-<p>While we try our best to disallow any copyrighted material from being hosting by this service, there is a chance that some will slip past our moderators.  We actively comply with any take down notices and will remove the copyrighted material as soon as possible.  Send any take down notices to {if $data.mailhide}{$data.mailhide}{else}<a href="mailto:{$config.mail.takedown}">{$config.mail.takedown}</a>{/if}.</p>
+<p>While we try out best to only allow properly licensed content from being hosted by this service, there is a chance that some will slip past our moderators.  We actively comply with any take down notices and will remove the content as soon as possible.  Send any take down notices to <a href="mailto:{$config.mail.takedown}">{$config.mail.takedown}</a>.</p>

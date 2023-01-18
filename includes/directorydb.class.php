@@ -6,7 +6,7 @@
   {
     var $sql;
     
-    function DirectoryDB($filename)
+    function __construct($filename)
     {
       
       // Try to create an SQLite3 database via the PDO functions

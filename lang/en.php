@@ -23,7 +23,7 @@
   
   $lang['authorinformation'] = "Author Information";
   $lang['authorname'] = "Author Name";
-  $lang['selectalicense'] = "Select a License";
+  $lang['selectalicense'] = "License the author selected for this image";
   $lang['licensename'] = "License Name";
   $lang['view'] = "View";
   $lang['specifylicenseurlortext'] = "Please specify a URL to the license and/or the license text itself.";

@@ -56,5 +56,7 @@
     <tr><td colspan="5">No files or folders exist in this directory</td></tr>
 {/if}
   </table>
+<hr>
+<a href="/submitimages/tos.php">Terms of Service / Takedown Requests</a>
 </body>
 </html>

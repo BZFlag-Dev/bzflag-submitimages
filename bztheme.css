@@ -53,6 +53,7 @@ hr {
 
 fieldset {
   border: 1px solid gray;
+  border-radius: 12px;
   padding: 0.5em 0.5em 0.5em;
   margin-bottom: 1em;
 }
@@ -62,6 +63,7 @@ legend {
   padding: 0 0.25em;
   margin-left: 0.5em;
   border: 1px solid gray;
+  border-radius: 8px;
 }
 
 input, select {

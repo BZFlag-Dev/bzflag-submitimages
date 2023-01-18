@@ -45,7 +45,7 @@
           
           $data['directories'][] = $item;
         }
-        else if (strtolower(end(explode('.', $item))) == 'png')
+        else if (strtolower(pathinfo($item, PATHINFO_EXTENSION)) == 'png')
         {
           $data['fileInfo'] = $dirdb->File_Fetch_ByFilename($item);
           if ($data['fileInfo'] && is_array($data['fileInfo']))
@@ -56,6 +56,9 @@
           }
           else
             $data['files'][] = Array('filename' => $item, 'filesize' => nicefilesize(filesize($data['filedirectory']."/".$item)));
+        }
+        else if ($item != "robots.txt" && strtolower(pathinfo($item, PATHINFO_EXTENSION)) == 'txt') {
+          $data['files'][] = Array('filename' => $item, 'filesize' => nicefilesize(filesize($data['filedirectory']."/".$item)));
         }
           
       }

@@ -4,7 +4,7 @@
   {
     var $sql;
         
-    function QueueDB($filename)
+    function __construct($filename)
     {
       
       // Try to create an SQLite3 database via the PDO functions

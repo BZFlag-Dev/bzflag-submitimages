@@ -18,6 +18,8 @@
   {
   	// Send off the proper Content-Type HTTP header
   	header("Content-Type: image/png");
+
+    header('Content-Disposition: inline; filename="'.addslashes($input['filename']).'"');
   
     // We don't want any warnings, notices, etc to show up during image generation
     error_reporting(0);

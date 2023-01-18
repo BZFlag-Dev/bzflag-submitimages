@@ -228,7 +228,7 @@
         // Don't unlink() the file because it wasn't something the user actually
         // uploaded. For instance, it could be a system file.
       }
-      else if (strtolower(end(explode('.', $input['files'][$i]['file']['filename']))) != 'png')
+      else if (strtolower(pathinfo($input['files'][$i]['file']['filename'], PATHINFO_EXTENSION)) != 'png')
       {
         $input['files'][$i]['invalid'] = true;
         $messages['errors'][] = str_replace('%ID%', $i, $lang['errorInvalidFileFormat']);
