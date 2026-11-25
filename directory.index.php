@@ -10,7 +10,7 @@
   $data['httpdirectoryclean'] = urldecode($data['httpdirectory']);
   // Not even sure if Apache would handle a request that included .. in it, but
   // better safe than sorry.
-  if (strstr('..', $_SERVER['REQUEST_URI'])) exit;
+  if (strpos($_SERVER['REQUEST_URI'], '..') !== false) exit;
   
   //filesize($filename)
   
